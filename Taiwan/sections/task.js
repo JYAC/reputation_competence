@@ -33,7 +33,7 @@ function showPreFace(face){
     var face = {
         type: "html-keyboard-response",
         stimulus: "<img src=\'img/faces/"+face['image']+"\'>",
-	      prompt: "<h2 style=\"text-align: center;\"><span style=\"color:black;\">.</span></h2><div style=\"height:135px; color:white;\"></div>",
+	      prompt: "<h2 style=\"text-align: center;\"><span style=\"color:black;\">.</span></h2><div style=\"height:139px; color:white;\"></div>",
         choices: [],
         trial_duration: face_duration * 1000
     };
@@ -119,7 +119,7 @@ function showTrialQ(face){
 
 // prerep trials
 function getPreTrial(face){
-    var trial = [showFace(face),
+    var trial = [showPreFace(face),
     showPreTrialQ(face)];
     return trial;
 };
